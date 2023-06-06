@@ -1,0 +1,13 @@
+business_name,business_city,business_state,business_postal_code,inspection_id,inspection_score,lowest_score,violation_description
+ANZU Restaurant,San Francisco,CA,94102,62550_20171026,96.0,58,Inadequately cleaned or sanitized food contact surfaces.
+Bon Appetit @ USF-Market Cafe,San Francisco,CA,94117,2907_20190829,86.0,64,Insufficient hot water or running water. Unapproved or unmaintained equipment or utensils. Inadequate and inaccessible handwashing facilities. Moderate risk vermin infestation.
+Cafe Tiramisu,San Francisco,CA,94104,1870_20170913,74.0,2,Improper food storage. Improper or defective plumbing. No hot water or running water. High risk food holding temperature. Inadequate food safety knowledge or lack of certified food safety manager. Inadequately cleaned or sanitized food contact surfaces.
+DELICA,San Francisco,CA,94111,61976_20170809,98.0,84,Unclean nonfood contact surfaces.
+EL FARO,San Francisco,CA,94110,4922_20171120,87.0,3,Unclean or degraded floors walls or ceilings. High risk food holding temperature. Moderate risk vermin infestation.
+Escape From New York Pizza,San Francisco,CA,94103,65602_20180403,98.0,89,Improper storage of equipment utensils or linens.
+J J Fish & Chicken,San Francisco,CA,94124,62597_20170110,85.0,6,Improper thawing methods. Improper reheating of food. Food safety certificate or food handler card not available. Inadequate warewashing facilities or equipment.
+La Promenade Cafe,San Francisco,CA,94121,75678_20180220,88.0,56,Food safety certificate or food handler card not available. Unclean or degraded floors walls or ceilings. Moderate risk vermin infestation. Inadequately cleaned or sanitized food contact surfaces.
+Lucky Ocean Cafe,San Francisco,CA,94112,94175_20190422,86.0,64,Permit license or inspection report not posted. Foods not protected from contamination. Inadequately cleaned or sanitized food contact surfaces. Inadequate and inaccessible handwashing facilities.
+Paris Pizza,San Francisco,CA,94133,66711_20180622,90.0,77,Unclean nonfood contact surfaces. Unclean or degraded floors walls or ceilings. Food safety certificate or food handler card not available. Wiping cloths not clean or properly stored or inadequate sanitizer. Inadequate or unsanitary refuse containers or area or no garbage service.
+The Fillmore,San Francisco,CA,94115,74989_20181120,98.0,75,Unapproved or unmaintained equipment or utensils.
+Yuyu Sushi,San Francisco,CA,94132,14005_20171205,90.0,60,Foods not protected from contamination. Wiping cloths not clean or properly stored or inadequate sanitizer. Moderate risk food holding temperature.

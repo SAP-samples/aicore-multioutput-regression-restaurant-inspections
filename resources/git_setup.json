@@ -1,0 +1,14 @@
+{
+    "repo": {
+            "name": "REPOSITORY-NAME",
+            "url": "REPOSITORY-URL",
+            "username": "USERNAME",
+            "password": "GITHUB-PAT-TOKEN"
+    },
+    "app": {
+            "applicationName": "APP-NAME",
+            "repositoryUrl": "REPOSITORY-URL (same as above)",
+            "revision": "HEAD",
+            "path": "workflows"
+    }
+}

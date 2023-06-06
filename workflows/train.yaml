@@ -1,0 +1,44 @@
+apiVersion: argoproj.io/v1alpha1
+kind: WorkflowTemplate
+metadata:
+  name: inspection-mo-regression-train-0 # Executable ID (max length 64 lowercase-hypen-separated), please modify this to any value if you are not the only user of your SAP AI Core instance. Example: `text-clf-train-tutorial-1234`
+  annotations:
+    scenarios.ai.sap.com/description: "Train and serve a multioutput regressionression model."
+    scenarios.ai.sap.com/name: inspection-mo-regression-scenario
+    executables.ai.sap.com/description: "Train a multioutput regressionression model."
+    executables.ai.sap.com/name: "inspection-mo-regression-exec"
+    artifacts.ai.sap.com/inspections.kind: "dataset"
+    artifacts.ai.sap.com/inspection-mo-regression-model.kind: "model"
+  labels:
+    scenarios.ai.sap.com/id: inspection-mo-regression-scenario # Unique ID for the AI scenario.
+    ai.sap.com/version: "0.0.1"
+spec:
+  imagePullSecrets:
+    - name: docker-registry-secret # Name of Docker regressionistry secret.
+  entrypoint: inspection-mo-regression-training
+  templates:
+    - name: inspection-mo-regression-training
+      metadata:
+        labels:
+          ai.sap.com/resourcePlan: starter
+      inputs:
+        artifacts:
+          - name: inspections # Modifiable name. Has to be also used in line 10.
+            path: /app/data/
+      outputs:
+        artifacts:
+          # The name for the model here can be different from the model name used
+          # in serving_workflow.yaml
+          - name: inspection-mo-regression-model # Modifiable name. Has to be also used in line 11.
+            path: /app/model
+            globalName: inspection-mo-regression-model
+            archive:
+              none: {}
+      container:
+        # URL of Docker image that was previously uploaded to Docker Hub.
+        image: <DOCKER-IMAGE-REPO>
+        imagePullPolicy: Always
+        command: ["/bin/sh", "-c"]
+        args:
+          - >
+            set -e && echo "---Start Training---" && python /app/src/train.py && ls -lR /app/model && echo "---End Training---"

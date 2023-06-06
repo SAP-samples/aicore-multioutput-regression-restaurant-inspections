@@ -1,0 +1,35 @@
+apiVersion: ai.sap.com/v1alpha1
+kind: ServingTemplate
+metadata:
+  name: inspection-mo-regression-infer-0 # Executable ID (max length 64 lowercase-hypen-separated), please modify this to any value if you are not the only user of your SAP AI Core instance. Example: `text-clf-infer-tutorial-1234`
+  annotations:
+    executables.ai.sap.com/description: "Serve a multioutput regression model."
+    executables.ai.sap.com/name: inspection-mo-regression-infer-exec
+  labels:
+    executables.ai.sap.com/id: inspection-mo-regression-infer-0
+    scenarios.ai.sap.com/id: inspection-mo-regression-scenario # Unique ID for the AI scenario.
+    ai.sap.com/version: 0.0.1
+spec:
+  inputs:
+    parameters: []
+    artifacts:
+      # Name for the trained model. Must not include hyphens (-), otherwise error is thrown.
+      # Make sure the same name is used in line 43.
+      - name: inspectionMoRegressionModel
+  imagePullSecrets:
+    - name: docker-registry-secret
+  template:
+    spec: |
+      default:
+        predictor:
+          minReplicas: 1
+          custom:
+            container:
+              name: kfserving-container
+              image: <DOCKER-IMAGE-SERVING-REPO>
+              ports:
+                - containerPort: 9001
+                  protocol: TCP
+              env:
+                - name: STORAGE_URI
+                  value: "{{inputs.artifacts.inspectionMoRegressionModel}}"

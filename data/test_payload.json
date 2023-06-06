@@ -1,0 +1,50 @@
+"payload": [
+    {
+        "business_postal_code": "94102",
+        "violation_description": "Inadequately cleaned or sanitized food contact surfaces."
+    },
+    {
+        "business_postal_code": "94117",
+        "violation_description": "Insufficient hot water or running water. Unapproved or unmaintained equipment or utensils. Inadequate and inaccessible handwashing facilities. Moderate risk vermin infestation."
+    },
+    {
+        "business_postal_code": "94104",
+        "violation_description": "Improper food storage. Improper or defective plumbing. No hot water or running water. High risk food holding temperature. Inadequate food safety knowledge or lack of certified food safety manager. Inadequately cleaned or sanitized food contact surfaces."
+    },
+    {
+        "business_postal_code": "94111",
+        "violation_description": "Unclean nonfood contact surfaces."
+    },
+    {
+        "business_postal_code": "94110",
+        "violation_description": "Unclean or degraded floors walls or ceilings. High risk food holding temperature. Moderate risk vermin infestation."
+    },
+    {
+        "business_postal_code": "94103",
+        "violation_description": "Improper storage of equipment utensils or linens."
+    },
+    {
+        "business_postal_code": "94124",
+        "violation_description": "Improper thawing methods. Improper reheating of food. Food safety certificate or food handler card not available. Inadequate warewashing facilities or equipment."
+    },
+    {
+        "business_postal_code": "94121",
+        "violation_description": "Food safety certificate or food handler card not available. Unclean or degraded floors walls or ceilings. Moderate risk vermin infestation. Inadequately cleaned or sanitized food contact surfaces."
+    },
+    {
+        "business_postal_code": "94112",
+        "violation_description": "Permit license or inspection report not posted. Foods not protected from contamination. Inadequately cleaned or sanitized food contact surfaces. Inadequate and inaccessible handwashing facilities."
+    },
+    {
+        "business_postal_code": "94133",
+        "violation_description": "Unclean nonfood contact surfaces. Unclean or degraded floors walls or ceilings. Food safety certificate or food handler card not available. Wiping cloths not clean or properly stored or inadequate sanitizer. Inadequate or unsanitary refuse containers or area or no garbage service."
+    },
+    {
+        "business_postal_code": "94115",
+        "violation_description": "Unapproved or unmaintained equipment or utensils."
+    },
+    {
+        "business_postal_code": "94132",
+        "violation_description": "Foods not protected from contamination. Wiping cloths not clean or properly stored or inadequate sanitizer. Moderate risk food holding temperature."
+    }
+]
