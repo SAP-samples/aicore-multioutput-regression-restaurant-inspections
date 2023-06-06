@@ -96,8 +96,7 @@ To do so, consider the following instructions:
    initiate the training and serving here.
 
 ## Known Issues
-
-<!-- You may simply state "No known issues. -->
+No known issues.
 
 ## How to obtain support
 
