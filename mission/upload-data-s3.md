@@ -1,8 +1,8 @@
 # Store Data in Amazon S3 bucket provided by the Object Store service
 
-In the following steps you will upload your dataset to an Amazon S3 bucket, a storage that
+In the following steps you will upload your dataset to an Amazon S3 bucket, storage that
 sits in the cloud, which the Object Store service created behind the scenes. This is to
-make the data available to AI Core later on for the purpose of training the model.
+make the data available to AI Core later for model training.
 
 ## AWS CLI
 
@@ -17,7 +17,7 @@ aws configure
 
 ![AWS configure](resources/aws-configure.png)
 
-Then enter your AWS credentials which you can find in the service key of your Object
+Enter your AWS credentials which you can find in the service key of your Object
 Store instance on SAP BTP. Note that the appearance of the screen will not change as you type. You can leave
 the `Default output format` entry as blank. Press enter to submit your credentials.
 
@@ -30,7 +30,7 @@ terminal so that the `<bucket-name>` matches the name of your bucket.
 aws s3 cp inspections.csv s3://<BUCKET-NAME>/app/data/
 ```
 
-To double check whether the dataset was uploaded successfully, run:
+To check that dataset was uploaded successfully, run:
 
 ```bash
 aws s3 ls s3://<BUCKET-NAME>/app/data/

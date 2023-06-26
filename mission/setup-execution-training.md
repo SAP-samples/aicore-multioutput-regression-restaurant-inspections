@@ -1,9 +1,9 @@
 # Setup and Execution of Training in AI Core
 
-In order to train the model, you first need to create a *training configuration*. It keeps
-information about which workflow to use, what the input artifact is (here the
-training dataset) and some more metadata like the ID of the AI Scenario. AI Core can in
-turn execute the model training according to this configuration.
+In order to train the model, you need to create a *training configuration*. This contains
+information about which workflow to use, input artifacts, (here the
+training dataset) and some more metadata like the ID of the AI Scenario. AI Core uses this configuration
+to execute the model training.
 
 ## Training Configuration
 
@@ -36,14 +36,14 @@ print("Configuration created for running the training")
 
 If the configuration has been created successfully, the configuration should also be
 listed in AI Launchpad under the ML Operations > Configurations tab. Make sure to select
-your respective resource group for this mission beforehand in the Workspaces tab on the
+your respective resource group for this mission beforehand in the Workspaces app on the
 left.
 
 ![Training Configuration](resources/config-train.png)
 
 ## Training Execution
 
-Now it is time to finally initiate the training:
+To start training, run:
 
 ```python
 execution_resp = ai_api_v2_client.execution.create(train_config_resp.id)
@@ -73,7 +73,7 @@ if execution.status == Status.COMPLETED:
         json.dump(output, fp)
 ```
 
-AI Core will now take some time to finish the training of the model. Once it has finished
+AI Core will now take some time to train the model. Once it has finished
 the execution should be also marked as finished in AI Launchpad.
 
 ![Execution finished](resources/execution-train.png)

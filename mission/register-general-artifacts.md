@@ -1,8 +1,9 @@
 # Register general Artifacts for Deployment in AI Core
 
-Before you can start to train the model, you will first need to register different
-artifacts for your AI Core instance. These artifacts include setup details and credentials
-that AI Core needs in order to proceed. First, create a *resources/* directory at the root
+Before you start to train the model, you need to register different setup details and credentials
+for your AI Core instance. 
+
+Create a *resources/* directory at the root
 level of your folder and copy the following files into *resources/*:
 
 - Service key of your AI Core instance
@@ -14,7 +15,7 @@ level of your folder and copy the following files into *resources/*:
   (PAT) instead of your normal Docker Hub password. The AI Core instance needs this secret
   to pull the docker images from your Docker Hub repository later on for training and serving.
 
-Next, follow the first few steps inside the [main.ipynb](../src/main.ipynb) file. In the
+Follow the first few steps inside the [main.ipynb](../src/main.ipynb) file. In the
 following steps the AI API Python SDK is used to interact with the AI Core instance and
 the AI API. 
 
@@ -136,7 +137,7 @@ ai_api_client.rest_client.post(
 )
 ```
 
-## Register training data as artifact
+## Register training data as an artifact
 
 In order to execute the training workflow later on, you further need to register the training
 data as an artifact for the AI Core instance:

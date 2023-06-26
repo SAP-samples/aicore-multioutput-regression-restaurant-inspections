@@ -1,2 +1,2 @@
 ## Create an account on Docker Hub
-In later stages of this mission, it's required to build docker images for the training phase and for the inference service. Those docker images must be hosted in a repository that can be accessed from SAP Business Technology Platform, such as Docker Hub. Therefore, let's create an account on [Docker Hub](https://hub.docker.com/) if you didn't get one already.
+The later stages of this mission builds docker images for the training phase and for the inference service. Those docker images must be hosted in a repository that can be accessed from SAP Business Technology Platform, such as Docker Hub. Therefore, let's create an account on [Docker Hub](https://hub.docker.com/) if you didn't get one already.
