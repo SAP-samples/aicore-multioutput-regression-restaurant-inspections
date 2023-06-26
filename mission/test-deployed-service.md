@@ -1,8 +1,8 @@
 # Test the deployed Inference service
 
-Now that the inference service ins running, send a request with some data about an
-inspection to the service and receive a prediction of the model as a response. You can use
-the following code snippet for that:
+Now that the inference service is running, send a request with some data about an
+inspection to the service and receive a prediction from the model as a response. Use
+the following code snippet:
 
 ```python
 body = { 
@@ -28,7 +28,7 @@ print('Inference result:', response.json())
 pprint(vars(response))
 ```
 
-One you are done with testing, kill the deployment again to save resources, by
+After testing, stop the deployment again to save resources, by
 running this code:
 
 ```python
@@ -40,9 +40,9 @@ while status != Status.STOPPED:
     clear_output(wait=True)
     deployment = ai_api_v2_client.deployment.get(deployment_resp.id)
     status = deployment.status
-    print('...... killing deployment ......', flush=True)
+    print('...... stopping deployment ......', flush=True)
     print(f"Deployment status: {deployment.status}")
 ```
 
-AI Core will take some time to finish killing the deployment. Afterwards you decide at any
-point to deploy the inference service again.
+AI Core will take some time to finish stop the deployment. Afterwards you van decide at any
+point to deploy the inferencing service again.

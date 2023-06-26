@@ -1,14 +1,13 @@
 # Setup and Deployment of Inference service in AI Core
 
-To deploy an inference service that makes the trained model available for inference
-requests, you first need to create a serving configuration. In that way it is analog to
-the steps you had to follow for [model training](./setup-execution-training.md).
+To deploy an inference service using the trained model, you need to create a serving configuration, similar to
+the steps for [model training](./setup-execution-training.md).
 
 ## Serving Configuration
 
-Again the configuration stores some metadata, like the ID of the AI Scenario and which workflow
-to use for serving. Further, one has to specify what input artifact to use for serving, which
-in this case is the trained model. To create the configuration, execute the following code:
+Again, the configuration stores metadata, like the ID of the AI Scenario, which workflow
+to use, and which artifacts to use, 
+in this casse, the trained model. To create the configuration, run the following code:
 
 ```python
 with open(serving_workflow_file) as swf:
@@ -44,15 +43,15 @@ print("configuration for serving the model created")
 ```
 
 If the serving configuration has been created successfully, it should show
-in AI Launchpad under the ML Operations > Configurations tab where the
-Training configuration has been listed previously as well.
+in AI Launchpad under the ML Operations > Configurations app where the
+Training configuration was listed.
 
 ![Serving configuration](resources/config-serve.png)
 
 ## Deploy Inference Service
 
-AI Core can now use the information from the serving configuration to finally deploy the
-inference service that makes the trained model available for inference requests. To do so,
+AI Core can now use the information from the serving configuration to deploy the
+inference service amd make the trained model available for inference requests. To do so,
 run this code:
 
 ```python
@@ -75,7 +74,7 @@ while status != Status.RUNNING and status != Status.DEAD:
 time.sleep(10)
 ```
 
-AI Core will need some time now to finish the deployment of the inference service. Once
+AI Core will need some time to finish deploying the inference service. Once
 the inference service has been deployed the deployment should be marked as *RUNNING* in AI
 Launchpad under the Deployments tab.
 
