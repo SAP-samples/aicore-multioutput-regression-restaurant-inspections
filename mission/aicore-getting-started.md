@@ -6,7 +6,7 @@ predictions based on that model and data. Both model training and serving happen
 
 AI Core is central to this mission. Here are some resources that help you to get a basic understanding of AI Core.
 
-- Basicss [tutorial group](https://developers.sap.com/group.ai-core-get-started-basics.html). In this tutorial follow the track that uses the [AI Core
+- Basics [tutorial group](https://developers.sap.com/group.ai-core-get-started-basics.html). In this tutorial follow the track that uses the [AI Core
 Python SDK](https://pypi.org/project/ai-core-sdk/) in order to interact with AI Core programmatically in plain python.
 - The full [AI Core
 documentation](https://help.sap.com/docs/AI_CORE/2d6c5984063c40a59eda62f4a9135bee/d029a32c22fb45fbb607e6a2c48c8a0e.html)
