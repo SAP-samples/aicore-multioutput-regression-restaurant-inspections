@@ -6,7 +6,7 @@ the steps for [model training](./setup-execution-training.md).
 ## Serving Configuration
 
 Again, the configuration stores metadata, like the ID of the AI Scenario, which workflow
-to use, and which artifacts to use, 
+to use, and which artifacts to use,
 in this casse, the trained model. To create the configuration, run the following code:
 
 ```python
@@ -51,7 +51,7 @@ Training configuration was listed.
 ## Deploy Inference Service
 
 AI Core can now use the information from the serving configuration to deploy the
-inference service amd make the trained model available for inference requests. To do so,
+inference service and make the trained model available for inference requests. To do so,
 run this code:
 
 ```python
@@ -75,7 +75,7 @@ time.sleep(10)
 ```
 
 AI Core will need some time to finish deploying the inference service. Once
-the inference service has been deployed the deployment should be marked as *RUNNING* in AI
+the inference service has been deployed the deployment should be marked as _RUNNING_ in AI
 Launchpad under the Deployments tab.
 
 ![Deployment running](resources/deployment-running.png)

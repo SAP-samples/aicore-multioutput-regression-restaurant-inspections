@@ -5,7 +5,7 @@ inspection to the service and receive a prediction from the model as a response.
 the following code snippet:
 
 ```python
-body = { 
+body = {
     "payload": [
         {
             "business_postal_code": "94102",
