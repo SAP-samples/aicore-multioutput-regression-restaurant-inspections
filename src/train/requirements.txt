@@ -1,5 +1,5 @@
 http://download.pytorch.org/whl/cpu/torch-1.9.0%2Bcpu-cp38-cp38-linux_x86_64.whl
-joblib==1.1.1
+joblib==1.2.0
 sentence_transformers==2.2.2
 pandas==1.4.3
 scikit_learn==1.1.1
