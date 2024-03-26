@@ -1,7 +1,7 @@
 ai-api-client-sdk==1.17.5
 asttokens==2.0.5
 backcall==0.2.0
-certifi==2022.12.7
+certifi==2023.7.22
 charset-normalizer==2.0.12
 debugpy==1.6.0
 decorator==5.1.1
