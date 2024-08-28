@@ -10,5 +10,3 @@ AI Core is central to this mission. Here are some resources that help you to get
 Python SDK](https://pypi.org/project/ai-core-sdk/) in order to interact with AI Core programmatically in plain python.
 - The full [AI Core
 documentation](https://help.sap.com/docs/AI_CORE/2d6c5984063c40a59eda62f4a9135bee/d029a32c22fb45fbb607e6a2c48c8a0e.html)
-
-***You might want to suggest an early completion point as the tutorial group goes through a whole project in itself. Some individual tutorials in the group help with the initial setup, you could specify those and then direct the user back to the mission. 
