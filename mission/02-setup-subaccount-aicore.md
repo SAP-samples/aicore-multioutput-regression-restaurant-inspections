@@ -42,5 +42,3 @@ The Overview of the Subaccount gives you a summary, including metadata or spaces
 
 Navigate to _Instances and Subscriptions_ to see the subscription to SAP AI Launchpad.
 ![Instances & Subscriptions](resources/booster/instances_overview.png)
-
-\*\*\*You might want to reduce these steps down to this booster tutorial which includes both products https://developers.sap.com/tutorials/ai-core-launchpad-provisioning.html
