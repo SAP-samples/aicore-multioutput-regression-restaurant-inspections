@@ -1,4 +1,4 @@
-# Inspect Training and Serving implementation
+# Inspect Training and Serving Implementation
 
 First the model needs to be trained using the inspections training
 data. Then one can serve the model to predict the _overall inspection score_ and the _lowest
