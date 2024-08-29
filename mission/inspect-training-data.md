@@ -19,4 +19,4 @@ The data is stored as a CSV (comma-separated values) file and captures the follo
  
 These four data columns are preprocessed, and used to train the
 model. To see the preprocessing steps go to this [card](inspect-train-serve-impl.md). To download the
-CSV file that contains the data described above, click [here](https://github.com/SAP-samples/aicore-multioutput-regression-restaurant-inspections/blob/johannagonnzdz-patch-1/data/inspections.csv).
+CSV file that contains the data described above, click [here](../data/inspections.csv).
