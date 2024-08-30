@@ -5,7 +5,7 @@ data. Then one can serve the model to predict the _overall inspection score_ and
 partial score_ based on new data about an inspection.
 
 To take a look at the training in full detail you can find the code [here](../src/train/). The code for
-serving the model is available [here](../src/train/train.py).
+serving the model is available [here](../src/serve/).
 
 ## Data Preprocessing
 
