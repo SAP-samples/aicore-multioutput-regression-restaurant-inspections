@@ -1,11 +1,11 @@
-# Inspect Training and Serving implementation
+# Inspect Training and Serving Implementation
 
 First the model needs to be trained using the inspections training
 data. Then one can serve the model to predict the _overall inspection score_ and the _lowest
 partial score_ based on new data about an inspection.
 
-To take a look at the training in full detail you can find the code [here](\*\*\*link missing). The code for
-serving the model is available [here](../src/train/train.py).
+To take a look at the training in full detail you can find the code [here](../src/train/). The code for
+serving the model is available [here](../src/serve/).
 
 ## Data Preprocessing
 

@@ -16,6 +16,3 @@ creating an instance only for AI Core, perform the same steps also for the Objec
 
 ### 3. Create a Service Key
 ![Create a Service Key](resources/services/create_service_key.png)
-
-
-***You might want to reduce these steps down to this booster tutorial which includes both products https://developers.sap.com/tutorials/ai-core-launchpad-provisioning.html

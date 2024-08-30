@@ -18,5 +18,5 @@ The data is stored as a CSV (comma-separated values) file and captures the follo
 4. Lowest Score: The lowest partial score of all the partial scores that contribute to the overall inspection score
  
 These four data columns are preprocessed, and used to train the
-model. To see the preprocessing stepsm go to this [card](inspect-train-serve-impl.md). To download the
-CSV file that contains the data described above, click [here]().
+model. To see the preprocessing steps go to this [card](inspect-train-serve-impl.md). To download the
+CSV file that contains the data described above, click [here](../data/inspections.csv).

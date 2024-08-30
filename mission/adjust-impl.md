@@ -15,4 +15,4 @@ python libraries, do the following:
   dataset that you uploaded to the S3 bucket in the first step.
 
 You can find more general instructions on how to adjust the repository of this
-mission to your use case [here](https://github.com/kay-schmitteckert/aicore-multioutput-regression-restaurant-inspections/tree/mission#boilerplate-ai-core).
+mission to your use case [here](../README.md#boilerplate-ai-core).
